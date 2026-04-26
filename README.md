@@ -37,18 +37,12 @@ usando modelos pre-entrenados de HuggingFace Transformers.
 ---
 
 ## ⚙️ Pipeline del proyecto
-3 CSV (EN + FR + ES)
-↓
-Unificación de columnas + etiqueta de idioma
-↓
-Traducción automática (Helsinki-NLP)
-FR → EN: opus-mt-fr-en
-ES → EN: opus-mt-es-en
-↓
-Análisis de sentimiento (DistilBERT SST-2)
-↓
-Export: CSV + SQLite + Gráficos
 
+1. 📥 **Ingesta** — Lectura de 3 CSV (EN + FR + ES)
+2. 🔧 **Preprocesamiento** — Unificación de columnas + etiqueta de idioma original
+3. 🌐 **Traducción** — Helsinki-NLP: FR→EN (`opus-mt-fr-en`) y ES→EN (`opus-mt-es-en`)
+4. 🤖 **Sentimiento** — DistilBERT SST-2 aplicado a cada reseña en inglés
+5. 📤 **Exportación** — CSV final + base de datos SQLite + gráficos
 ---
 
 ## 🤖 Modelos pre-entrenados
