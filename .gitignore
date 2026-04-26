@@ -1,0 +1,18 @@
+# Modelos descargados de HuggingFace (pesan demasiado)
+*.bin
+*.pt
+*.safetensors
+
+# Base de datos local
+*.db
+
+# Jupyter checkpoints basura
+.ipynb_checkpoints/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Variables de entorno
+.env
+__pycache__/
